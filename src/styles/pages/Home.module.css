@@ -1,0 +1,234 @@
+.container {
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container section {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    align-content: center;
+}
+
+.con {
+    display: grid;
+    grid-template-columns: 0.5fr 6fr;
+    align-items: center;
+}
+
+.containerLogin {
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.containerLogin section {
+    flex: 1;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.lbtn {
+    flex-direction: row;
+    font-size: 14pt;
+    font-weight: 900;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    height: 64px;
+    flex: initial;
+    font-family: '나눔바른고딕 Bold', 'Roboto', sans-serif;
+    margin: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.lbtn:first-child {
+    margin-top: 50px;
+}
+
+.lbtn.long {
+    width: 450px;
+}
+
+.lbtn .label {
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid;
+    display: flex;
+    border-color: inherit;
+}
+
+.lbtn .logo {
+    width: 64px;
+    border-radius: 50%;
+    flex: initial;
+    display: flex;
+    position: relative;
+    background-color: inherit;
+}
+
+.lbtn.lbtnTwitter {
+    color: #1da1f2;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+.lbtn.lbtnGithub {
+    color: #1a1414;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+.lbtn.lbtnGoogle {
+    color: #ea4335;
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.loginPage {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.loginPage img {
+    margin-left: 55px;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: var(--white);
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.customBtn {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btnTres {
+    background: var(--blue);
+    width: 100%;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btnTres span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btnTres:before,
+.btnTres:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--blue);
+    transition: all 0.3s ease;
+}
+
+.btnTres:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btnTres:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btnTres:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btnTres:hover:before {
+    height: 100%;
+}
+
+.btnTres:hover:after {
+    width: 100%;
+}
+
+.btnTres span:hover {
+    color: var(--blue);
+}
+
+.btnTres span:before,
+.btnTres span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--blue);
+    transition: all 0.3s ease;
+}
+
+.btnTres span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btnTres span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btnTres span:hover:before {
+    height: 100%;
+}
+
+.btnTres span:hover:after {
+    width: 100%;
+}
